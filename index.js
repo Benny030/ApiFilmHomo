@@ -26,7 +26,7 @@ let films= [
 //LETTURA FILE 
 fs.open("./dati.json", "wx+", (err,f) => {
     if(err){
-        fs.readFile("../ApiRest Film/dati.json", (erro,data) => {
+        fs.readFile("./dati.json", (erro,data) => {
             if(erro) console.error(erro);
             else {
                 console.log("Letto!");
