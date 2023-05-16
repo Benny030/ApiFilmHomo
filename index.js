@@ -20,10 +20,26 @@ let films= [
     "autore":"Jul' Maroh",
     "datadipubblicazione":"2013-10-24",
     "regista":"Abdellatif Kechiche",
+    "copertina":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCeqFKAQoX779iNCMHjUkt_vsPUJK-9hSI_skIa6p269zTTaFr",
     "id":0}];
-//AGGIUGNI FILM CON METODO POST
-
-
+    
+//LETTURA FILE 
+fs.open("./dati.json", "wx+", (err,f) => {
+    if(err){
+        fs.readFile("../ApiRest Film/dati.json", (erro,data) => {
+            if(erro) console.error(erro);
+            else {
+                console.log("Letto!");
+                films = JSON.parse(data);
+            }
+        });
+        return;
+    }
+    fs.writeFile("./dati.json", JSON.stringify(films), (err) => {
+        if(err) console.error(err);
+        else console.log("File FILM Salvato!")
+    })
+})
 
 
 //WEB API PER INSERIMENTO!
@@ -42,24 +58,6 @@ app.post('/film', (req,res)=>{
 
 //RITORNA LA LISTA DEI FILM CON METODO GET 
 app.get('/films', (req,res)=>{
-    
-//LETTURA FILE 
-    fs.open("../ApiRest Film/dati.json", "wx+", (err,f) => {
-        if(err){
-            fs.readFile("../ApiRest Film/dati.json", (erro,data) => {
-                if(erro) console.error(erro);
-                else {
-                    console.log("Letto!");
-                    films = JSON.parse(data);
-                }
-            });
-            return;
-        }
-        fs.writeFile("../ApiRest Film/dati.json", JSON.stringify(films), (err) => {
-            if(err) console.error(err);
-            else console.log("File FILM Salvato!")
-        })
-    })
     res.json(films)
 })
 
