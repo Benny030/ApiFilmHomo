@@ -22,7 +22,7 @@ let films= [
     "regista":"Abdellatif Kechiche",
     "copertina":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCeqFKAQoX779iNCMHjUkt_vsPUJK-9hSI_skIa6p269zTTaFr",
     "id":0}];
-    
+
 //LETTURA FILE 
 fs.open("./dati.json", "wx+", (err,f) => {
     if(err){
@@ -30,6 +30,7 @@ fs.open("./dati.json", "wx+", (err,f) => {
             if(erro) console.error(erro);
             else {
                 console.log("Letto!");
+                console.log(JSON.parse(data));
                 films = JSON.parse(data);
             }
         });
