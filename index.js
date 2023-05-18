@@ -3,14 +3,16 @@ import express from 'express';
 import fs from 'fs';
 import path from 'path';
 import url from 'url';
+import cors from 'cors';
 
 
 const app = express();
 const PORT = 8080;
-
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+
+app.use(cors());
 app.use(express.json());
 app.use(
   '/static',
