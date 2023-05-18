@@ -57,7 +57,7 @@ app.post('/film', (req, res) => {
     film.id = films.length; //Aggiungo un id ai film, che si autoincrementa.
     films.push(film);
 
-    fs.writeFile("/tmp/public/dati.json", JSON.stringify(films), (err) => { if (err) console.error(err) });
+    fs.writeFile("public/dati.json", JSON.stringify(films), (err) => { if (err) console.error(err) });
 
     res.send('Film aggiunto al database!')
 
