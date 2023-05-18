@@ -30,7 +30,23 @@ let films = [
         "id": 0
     }];
 
-
+//LETTURA FILE 
+fs.open("public/dati.json", "wx+", (err, f) => {
+    if (err) {
+        fs.readFile("public/dati.json", (erro, data) => {
+            if (erro) console.error(erro);
+            else {
+                console.log("Letto!");
+                films = JSON.parse(data);
+            }
+        });
+        return;
+    }
+        fs.writeFile("public/dati.json", JSON.stringify(films), (err) => {
+            if (err) console.error(err);
+            else console.log("File FILM Salvato!")
+        });
+});
 
 
 //WEB API PER INSERIMENTO!
@@ -94,23 +110,7 @@ app.post('/film/:id', (req, res) => {
     res.send('Modifica avvenuta correttamente')
 })
 
-//LETTURA FILE 
-fs.open("public/dati.json", "wx+", (err, f) => {
-    if (err) {
-        fs.readFile("public/dati.json", (erro, data) => {
-            if (erro) console.error(erro);
-            else {
-                console.log("Letto!");
-                films = JSON.parse(data);
-            }
-        });
-        return;
-    }
-        fs.writeFile("public/dati.json", JSON.stringify(films), (err) => {
-            if (err) console.error(err);
-            else console.log("File FILM Salvato!")
-        });
-});
+
 
 
 app.listen(
