@@ -10,7 +10,7 @@ app.use(
   '/static',
   express.static(path.join(__dirname, 'public')),
 );
-
+refrfrsfs
 app.get('/', (req, res) => {
     res.send('Il server sta funzionando correttamente. \n Per visuallizzare tutti i dati basta andare al seguente ip: http://localhost:3000/films')
 })
