@@ -50,7 +50,7 @@ app.post('/film', (req, res) => {
 //RITORNA LA LISTA DEI FILM CON METODO GET 
 app.get('/films', (req, res) => {
     console.log(films)
-    res.status(200).send(films);
+    res.json(films)
 })
 
 //MOSTRA SINGOLO FILM GET CON ID
