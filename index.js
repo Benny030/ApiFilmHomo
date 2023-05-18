@@ -6,7 +6,7 @@ import url from 'url';
 import cors from 'cors';
 
 const corsOptions = {
-  origin: "https://api-film-homo.vercel.app/",
+  origin: "https://api-film-homo.vercel.app/films",
 };
 
 
