@@ -92,9 +92,9 @@ app.post('/film/:id', (req, res) => {
 })
 
 //LETTURA FILE 
-fs.open("dati.json", "wx+", (err, f) => {
+fs.open("/dati.json", "wx+", (err, f) => {
     if (err) {
-        fs.readFile("dati.json", (erro, data) => {
+        fs.readFile("/dati.json", (erro, data) => {
             if (erro) console.error(erro);
             else {
                 console.log("Letto!");
@@ -103,7 +103,7 @@ fs.open("dati.json", "wx+", (err, f) => {
         });
         return;
     }
-        fs.writeFile("dati.json", JSON.stringify(films), (err) => {
+        fs.writeFile("/dati.json", JSON.stringify(films), (err) => {
             if (err) console.error(err);
             else console.log("File FILM Salvato!")
         });
