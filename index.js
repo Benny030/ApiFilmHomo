@@ -7,6 +7,8 @@ import path from 'path';
 const app = express();
 const PORT = 8080;
 
+const __dirname = path.dirname(__filename);
+
 app.use(express.json());
 app.use(
   '/static',
