@@ -5,19 +5,15 @@ import path from 'path';
 import url from 'url';
 import cors from 'cors';
 
-
 const app = express();
 const PORT = 8080;
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 
-app.use(cors());
 app.use(express.json());
-app.use(
-  '/static',
-  express.static(path.join(__dirname, 'public')),
-);
+app.use(cors());
+app.use('/static', express.static(path.join(__dirname, 'public')),);
 
 app.get('/', (req, res) => {
     res.send('Il server sta funzionando correttamente. \n Per visuallizzare tutti i dati basta andare al seguente ip: http://localhost:3000/films')
