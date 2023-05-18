@@ -47,7 +47,7 @@ app.post('/film', (req, res) => {
 //RITORNA LA LISTA DEI FILM CON METODO GET 
 app.get('/films', (req, res) => {
     console.log(films)
-    res.json(films)
+    res.status(200).send(films);
 })
 
 //MOSTRA SINGOLO FILM GET CON ID
