@@ -1,17 +1,13 @@
-//prima------
 import express from 'express';
 import fs from 'fs';
 import path from 'path';
 
-
 const app = express();
-const PORT = 8080;
+const port = 3000;
 
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(
-  '/static',
-  express.static(path.join(__dirname, 'public')),
-);
+
 
 app.get('/', (req, res) => {
     res.send('Il server sta funzionando correttamente. \n Per visuallizzare tutti i dati basta andare al seguente ip: http://localhost:3000/films')
@@ -109,8 +105,4 @@ fs.open("public/dati.json", "wx+", (err, f) => {
         });
 });
 
-
-app.listen(
-    PORT,
-    () => console.log("it'alive on http://localhost:8080")
-)
+app.listen(port, () => console.log("L'app sta funzionando"));
