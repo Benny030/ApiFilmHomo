@@ -1,1 +1,138 @@
-[{"titolo":"Blue is the Warmest Color","autore":"Jul' Maroh","datadipubblicazione":"2013-10-24","regista":"Abdellatif Kechiche","copertina":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCeqFKAQoX779iNCMHjUkt_vsPUJK-9hSI_skIa6p269zTTaFr","id":0},{"titolo":"Booksmart ","autore":"Olivia Wilde","datadipubblicazione":"2019-08-21","regista":"Olivia Wilde","copertina":"https://m.media-amazon.com/images/I/51PKKdD-jzL.jpg","id":1},{"titolo":"The Boys in the Band","autore":"Mart Crowley","datadipubblicazione":"1970-10-29","regista":"William Friedkin","copertina":"https://m.media-amazon.com/images/M/MV5BNzM1ZWVmNTktNjZhYi00ZTQyLTgzY2EtZGFiMjg0Zjk3MTcwXkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_FMjpg_UX1000_.jpg","id":2},{"titolo":"Boy Erased","autore":"Garrard Conley","datadipubblicazione":"2018-09-02","regista":"Joel Edgerton","copertina":"https://upload.wikimedia.org/wikipedia/en/1/1d/Boy_Erased_%282018_poster%29.png","id":3},{"titolo":"Brokeback Mountain","autore":"Annie Proulx","datadipubblicazione":"2006-01-20","regista":"Ang Lee","copertina":"https://d28hgpri8am2if.cloudfront.net/book_images/cvr9780743271325_9780743271325_hr.jpg","id":4},{"titolo":"But I'm a Cheerleader","autore":"Jamie Babbit","datadipubblicazione":"2000-08-11","regista":"Jamie Babbit","copertina":"https://m.media-amazon.com/images/I/51FoGnhPhzL.jpg","id":5},{"titolo":"Call Me by Your Name","autore":"André Aciman","datadipubblicazione":"2018-01-25","regista":"Luca Guadagnino","copertina":"https://m.media-amazon.com/images/I/812SKExc1tL.jpg","id":6},{"titolo":"Carol ","autore":"Phyllis Nagy","datadipubblicazione":"2009-11-06","regista":"Todd Haynes","copertina":"https://m.media-amazon.com/images/I/91qor8TIUqL._SY445_.jpg","id":7},{"titolo":"The Favourite","autore":"Yorgos Lanthimos","datadipubblicazione":"2018-11-23","regista":"Yorgos Lanthimos","copertina":"https://m.media-amazon.com/images/I/81d+sbLTuZL._SY445_.jpg","id":8},{"titolo":"The Handmaiden","autore":"Sarah Waters","datadipubblicazione":"2016-05-14","regista":"Park Chan-wook","copertina":"https://m.media-amazon.com/images/M/MV5BMTg2NTI5MTMwNl5BMl5BanBnXkFtZTgwODM5MDY1OTE@._V1_.jpg","id":9},{"titolo":"Les Amours imaginaires","autore":"Xavier Dolan","datadipubblicazione":"2010-06-11","regista":"Xavier Dolan","copertina":"https://m.media-amazon.com/images/I/41NhY8b7zdL._SY445_.jpg","id":10},{"titolo":"Laurence Anyways","autore":"Xavier Dolan","datadipubblicazione":"2012-07-18","regista":"Xavier Dolan","copertina":"https://lasttimeisawdotcom.files.wordpress.com/2014/06/laurence-anyways-poster.jpg?w=640","id":11},{"titolo":"J'ai tué ma mère","autore":"Xavier Dolan","datadipubblicazione":"2009-06-05","regista":"Xavier Dolan","copertina":"https://m.media-amazon.com/images/I/51axuW9m+6S._SY445_.jpg","id":12},{"titolo":"Pride","autore":"Matthew Warchus","datadipubblicazione":"2014-01-12","regista":"Matthew Warchus","copertina":"https://pad.mymovies.it/filmclub/2014/08/061/locandina.jpg","id":13},{"titolo":"Moonlight","autore":"Edward Elgar","datadipubblicazione":"2016-01-02","regista":"Barry Jenkins","copertina":"https://m.media-amazon.com/images/I/910hgTnsROL._SL1500_.jpg","id":14},{"titolo":"Portrait de la Jeun Fille en Feu","autore":"Céline Sciamma","datadipubblicazione":"2019-12-19","regista":"Céline Sciamma","copertina":"https://fr.web.img6.acsta.net/pictures/19/07/19/11/39/2251576.jpg","id":15},{"titolo":"The Power of the Dog","autore":"Thomas Savage","datadipubblicazione":"2021-11-17","regista":"Jane Campion","copertina":"https://m.media-amazon.com/images/M/MV5BZGRhYjE2NWUtN2FkNy00NGI3LTkxYWMtMDk4Yjg5ZjI3MWI2XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UX1000_.jpg","id":16}]
+[
+    {
+        "titolo": "Blue is the Warmest Color",
+        "autore": "Jul' Maroh",
+        "datadipubblicazione": "2013-10-24",
+        "regista": "Abdellatif Kechiche",
+        "copertina": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCeqFKAQoX779iNCMHjUkt_vsPUJK-9hSI_skIa6p269zTTaFr",
+        "id": 0
+    },
+    {
+        "titolo": "Booksmart ",
+        "autore": "Olivia Wilde",
+        "datadipubblicazione": "2019-08-21",
+        "regista": "Olivia Wilde",
+        "copertina": "https://m.media-amazon.com/images/I/51PKKdD-jzL.jpg",
+        "id": 1
+    },
+    {
+        "titolo": "The Boys in the Band",
+        "autore": "Mart Crowley",
+        "datadipubblicazione": "1970-10-29",
+        "regista": "William Friedkin",
+        "copertina": "https://m.media-amazon.com/images/M/MV5BNzM1ZWVmNTktNjZhYi00ZTQyLTgzY2EtZGFiMjg0Zjk3MTcwXkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_FMjpg_UX1000_.jpg",
+        "id": 2
+    },
+    {
+        "titolo": "Boy Erased",
+        "autore": "Garrard Conley",
+        "datadipubblicazione": "2018-09-02",
+        "regista": "Joel Edgerton",
+        "copertina": "https://upload.wikimedia.org/wikipedia/en/1/1d/Boy_Erased_%282018_poster%29.png",
+        "id": 3
+    },
+    {
+        "titolo": "Brokeback Mountain",
+        "autore": "Annie Proulx",
+        "datadipubblicazione": "2006-01-20",
+        "regista": "Ang Lee",
+        "copertina": "https://d28hgpri8am2if.cloudfront.net/book_images/cvr9780743271325_9780743271325_hr.jpg",
+        "id": 4
+    },
+    {
+        "titolo": "But I'm a Cheerleader",
+        "autore": "Jamie Babbit",
+        "datadipubblicazione": "2000-08-11",
+        "regista": "Jamie Babbit",
+        "copertina": "https://m.media-amazon.com/images/I/51FoGnhPhzL.jpg",
+        "id": 5
+    },
+    {
+        "titolo": "Call Me by Your Name",
+        "autore": "André Aciman",
+        "datadipubblicazione": "2018-01-25",
+        "regista": "Luca Guadagnino",
+        "copertina": "https://m.media-amazon.com/images/I/812SKExc1tL.jpg",
+        "id": 6
+    },
+    {
+        "titolo": "Carol ",
+        "autore": "Phyllis Nagy",
+        "datadipubblicazione": "2009-11-06",
+        "regista": "Todd Haynes",
+        "copertina": "https://m.media-amazon.com/images/I/91qor8TIUqL._SY445_.jpg",
+        "id": 7
+    },
+    {
+        "titolo": "The Favourite",
+        "autore": "Yorgos Lanthimos",
+        "datadipubblicazione": "2018-11-23",
+        "regista": "Yorgos Lanthimos",
+        "copertina": "https://m.media-amazon.com/images/I/81d+sbLTuZL._SY445_.jpg",
+        "id": 8
+    },
+    {
+        "titolo": "The Handmaiden",
+        "autore": "Sarah Waters",
+        "datadipubblicazione": "2016-05-14",
+        "regista": "Park Chan-wook",
+        "copertina": "https://m.media-amazon.com/images/M/MV5BMTg2NTI5MTMwNl5BMl5BanBnXkFtZTgwODM5MDY1OTE@._V1_.jpg",
+        "id": 9
+    },
+    {
+        "titolo": "Les Amours imaginaires",
+        "autore": "Xavier Dolan",
+        "datadipubblicazione": "2010-06-11",
+        "regista": "Xavier Dolan",
+        "copertina": "https://m.media-amazon.com/images/I/41NhY8b7zdL._SY445_.jpg",
+        "id": 10
+    },
+    {
+        "titolo": "Laurence Anyways",
+        "autore": "Xavier Dolan",
+        "datadipubblicazione": "2012-07-18",
+        "regista": "Xavier Dolan",
+        "copertina": "https://lasttimeisawdotcom.files.wordpress.com/2014/06/laurence-anyways-poster.jpg?w=640",
+        "id": 11
+    },
+    {
+        "titolo": "J'ai tué ma mère",
+        "autore": "Xavier Dolan",
+        "datadipubblicazione": "2009-06-05",
+        "regista": "Xavier Dolan",
+        "copertina": "https://m.media-amazon.com/images/I/51axuW9m+6S._SY445_.jpg",
+        "id": 12
+    },
+    {
+        "titolo": "Pride",
+        "autore": "Matthew Warchus",
+        "datadipubblicazione": "2014-01-12",
+        "regista": "Matthew Warchus",
+        "copertina": "https://pad.mymovies.it/filmclub/2014/08/061/locandina.jpg",
+        "id": 13
+    },
+    {
+        "titolo": "Moonlight",
+        "autore": "Edward Elgar",
+        "datadipubblicazione": "2016-01-02",
+        "regista": "Barry Jenkins",
+        "copertina": "https://m.media-amazon.com/images/I/910hgTnsROL._SL1500_.jpg",
+        "id": 14
+    },
+    {
+        "titolo": "Portrait de la Jeun Fille en Feu",
+        "autore": "Céline Sciamma",
+        "datadipubblicazione": "2019-12-19",
+        "regista": "Céline Sciamma",
+        "copertina": "https://fr.web.img6.acsta.net/pictures/19/07/19/11/39/2251576.jpg",
+        "id": 15
+    },
+    {
+        "titolo": "The Power of the Dog",
+        "autore": "Thomas Savage",
+        "datadipubblicazione": "2021-11-17",
+        "regista": "Jane Campion",
+        "copertina": "https://m.media-amazon.com/images/M/MV5BZGRhYjE2NWUtN2FkNy00NGI3LTkxYWMtMDk4Yjg5ZjI3MWI2XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UX1000_.jpg",
+        "id": 16
+    }
+]
