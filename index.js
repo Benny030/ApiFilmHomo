@@ -57,21 +57,7 @@ app.post('/film', (req, res) => {
     film.id = films.length; //Aggiungo un id ai film, che si autoincrementa.
     films.push(film);
 
-    //fs.writeFile("public/dati.json", JSON.stringify(films), (err) => { if (err) console.error(err) });
-
-
-    exports.handler = function(event, context) {
-        fs.writeFile("/tmp/public/dati.json", "testing", function (err) {
-         if (err) {
-             context.fail("writeFile failed: " + err);
-         } else {
-             context.succeed("writeFile succeeded");
-         }
-       });
-      };
-
-
-
+    fs.writeFile("/tmp/public/dati.json", JSON.stringify(films), (err) => { if (err) console.error(err) });
 
     res.send('Film aggiunto al database!')
 
