@@ -1,17 +1,13 @@
-//prima------
 import express from 'express';
 import fs from 'fs';
 import path from 'path';
-
 const app = express();
-const PORT = 8080;
-//seconda------
+const port = 3000;
+
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(
-  '/static',
-  express.static(path.join(__dirname, 'public')),
-);
-refrfrsfs
+
+
 app.get('/', (req, res) => {
     res.send('Il server sta funzionando correttamente. \n Per visuallizzare tutti i dati basta andare al seguente ip: http://localhost:3000/films')
 })
@@ -90,27 +86,22 @@ app.post('/film/:id', (req, res) => {
     res.send('Modifica avvenuta correttamente')
 })
 
-
-fs.open("public/dati.json", "wx+", (err, f) => {
+//LETTURA FILE 
+fs.open("/dati.json", "wx+", (err, f) => {
     if (err) {
-        fs.readFile("public/dati.json", (erro, data) => {
+        fs.readFile("/dati.json", (erro, data) => {
             if (erro) console.error(erro);
             else {
-                console.log("Read!");
+                console.log("Letto!");
                 films = JSON.parse(data);
             }
         });
         return;
     }
-    fs.writeFile("public/dati.json", JSON.stringify(films), (err) => {
-        if (err) console.error(err);
-        else console.log("Saved!");
-    });
+        fs.writeFile("/dati.json", JSON.stringify(films), (err) => {
+            if (err) console.error(err);
+            else console.log("File FILM Salvato!")
+        });
 });
 
-
-
-app.listen(
-    PORT,
-    () => console.log("it'alive on http://localhost:8080")
-)
+app.listen(port, () => console.log("L'app sta funzionando"));
