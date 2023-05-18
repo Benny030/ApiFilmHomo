@@ -1,7 +1,8 @@
 //prima------
-const express = require('express');
-const fs = require('fs');
-const path = require('path');
+import express from 'express';
+import fs from 'fs';
+import path from 'path';
+
 const app = express();
 const PORT = 8080;
 //seconda------
