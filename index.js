@@ -2,12 +2,12 @@
 import express from 'express';
 import fs from 'fs';
 import path from 'path';
-import fileURLToPath from 'url';
+import url from 'url';
 
 const app = express();
 const PORT = 8080;
 
-const __filename = fileURLToPath(import.meta.url);
+const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 app.use(express.json());
