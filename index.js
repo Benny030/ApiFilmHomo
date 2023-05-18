@@ -3,7 +3,7 @@ import express from 'express';
 import fs from 'fs';
 import path from 'path';
 import url from 'url';
-import cors from 'cors';
+const cors = require("cors");
 
 const app = express();
 const PORT = 8080;
